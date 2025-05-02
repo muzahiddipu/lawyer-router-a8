@@ -37,9 +37,9 @@ const StatsCounter = () => {
       </div>
 
       <div className='grid grid-cols-1 md:grid-cols-4 gap-5 w-10/12 mx-auto  p-7'>
-      <StatCard icon="📋" end={199} label="Total Doctors" duration={1500} />
+      <StatCard icon="📋" end={199} label="Total Lawyer" duration={1500} />
       <StatCard icon="⭐️⭐️⭐️" end={467} label="Total Reviews" duration={1800} />
-      <StatCard icon="🧑‍⚕️👩‍⚕️" end={1900} label="Patients" duration={2000} />
+      <StatCard icon="🧑‍⚕️👩‍⚕️" end={1900} label="Cases Initiated" duration={2000} />
       <StatCard icon="👥" end={300} label="Total Staffs" duration={1600} />
       </div>
     </div>

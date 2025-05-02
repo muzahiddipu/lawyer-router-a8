@@ -3,9 +3,9 @@ import { createBrowserRouter} from 'react-router';
 import Root from "../Root/Root";
 import Home from "../Home/Home";
 import ErrorPage from "../Pages/ErrorPage/ErrorPage";
-import DoctorDetails from "../Pages/DoctorDetails/DoctorDetails";
 import ApointList from "../Pages/ApointList/ApointList";
 import Blogs from "../Pages/Blogs/Blogs";
+import LawyerDetails from "../Pages/LawyerDetails/LawyerDetails";
 
 
 export const router = createBrowserRouter([
@@ -31,9 +31,9 @@ export const router = createBrowserRouter([
           Component: Blogs
         },
         {
-          path:  '/doctorDetails/:id',
+          path:  '/lawyerDetails/:id',
           loader:()=>fetch('./lawersData.json'),
-          Component: DoctorDetails
+          Component: LawyerDetails
         }
         
       ]

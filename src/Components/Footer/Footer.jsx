@@ -33,13 +33,13 @@ const Footer = () => {
                     <div className='border-t-1 border-dashed border-gray-50 '></div>
                     <div className='flex items-center justify-center gap-5 mt-5'>
                     <a href='https://www.facebook.com/skudbjuj' target='_blank' rel='noopener noreferrer'>
-                        <span className='text-2xl text-blue-700'><SiFacebook /></span>
+                        <span className='text-2xl text-white'><SiFacebook /></span>
                         </a>
                         <a href='https://www.linkedin.com/in/md-jamil-uddin-9886b4303/' target='_blank' rel='noopener noreferrer'>
-                            <span className='text-2xl text-blue-700'><FaLinkedin /></span>
+                            <span className='text-2xl text-white'><FaLinkedin /></span>
                         </a>
                         <a href='www.youtube.com/@MDJAMILUDDINJISHAN' target='_blank' rel='noopener noreferrer'>
-                            <span className='text-2xl text-red-700'><IoLogoYoutube /></span>
+                            <span className='text-2xl text-white'><IoLogoYoutube /></span>
                         </a>
                         <a href='https://www.instagram.com/jamiluddinjishan/' target='_blank' rel='noopener noreferrer'>
                             <span className='text-2xl'><PiInstagramLogoFill /></span>

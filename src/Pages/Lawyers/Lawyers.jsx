@@ -1,10 +1,10 @@
 import React, { Suspense, useState } from 'react';
-import Doctor from '../Doctor/Doctor';
+import Lawyer from '../Lawyer/Lawyer';
 
-const Doctors = ({ lawersData }) => {
+const Lawyers = ({ lawersData }) => {
     const [showAll, setShowAll] = useState(false);
 
-    const visibleDoctors = showAll ? lawersData : lawersData.slice(0, 6);
+    const visiblelawyers = showAll ? lawersData : lawersData.slice(0, 6);
 
     return (
         <div className='w-10/12 mx-auto mt-10'>
@@ -18,8 +18,8 @@ const Doctors = ({ lawersData }) => {
             <Suspense fallback={<span className="loading loading-bars loading-xl"></span>}>
                 <div className='grid lg:grid-cols-2 md:grid-cols-2 gap-5 grid-cols-1 p-10 rounded-xl'>
                     {
-                        visibleDoctors.map((doctor) => (
-                            <Doctor key={doctor.id} doctor={doctor} />
+                        visiblelawyers.map((lawyer) => (
+                            <Lawyer key={lawyer.id} lawyer={lawyer} />
                         ))
                     }
                 </div>
@@ -42,7 +42,7 @@ const Doctors = ({ lawersData }) => {
     );
 };
 
-export default Doctors;
+export default Lawyers;
 
 
 

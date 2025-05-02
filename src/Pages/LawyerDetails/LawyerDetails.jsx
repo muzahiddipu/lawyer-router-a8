@@ -6,12 +6,12 @@ import { addToStoreDB } from '../../Test/Test';
 import { toast } from 'react-toastify';
 
 
-const DoctorDetails = () => {
+const LawyerDetails = () => {
     const navigate = useNavigate();
     const { id } = useParams();
     const docId = parseInt(id);
     const data = useLoaderData();
-    const singleDoctor = data.find(doc => doc.id === docId);
+    const singleLawyer = data.find(doc => doc.id === docId);
 
     const handleAppointmentBook = id => {
         addToStoreDB(id);
@@ -21,11 +21,11 @@ const DoctorDetails = () => {
         }, 100); 
     };
 
-    if (!singleDoctor) {
-        return <div>Doctor not found.</div>;
+    if (!singleLawyer) {
+        return <div>Lawyer not found.</div>;
     }
 
-    const { image_url, name, education, speciality, experience, license_number, view_details } = singleDoctor;
+    const { image_url, name, education, speciality, experience, license_number, } = singleLawyer;
     const days = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
     const currentDay = new Date().getDay();
 
@@ -102,7 +102,7 @@ const DoctorDetails = () => {
     );
 };
 
-export default DoctorDetails;
+export default LawyerDetails;
 
 
 

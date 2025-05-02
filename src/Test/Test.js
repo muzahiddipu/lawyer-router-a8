@@ -1,9 +1,9 @@
-const getStoreDoctor = ()=>{
-    const storedDoctorSTR = localStorage.getItem("doctorList");
+const getStoreLawyer = ()=>{
+    const storedLawyerSTR = localStorage.getItem("lawyerList");
 
-    if(storedDoctorSTR){
-        const storedDoctorData = JSON.parse(storedDoctorSTR);
-        return storedDoctorData;
+    if(storedLawyerSTR){
+        const storedLawyerData = JSON.parse(storedLawyerSTR);
+        return storedLawyerData;
     }
     else{
         return [];
@@ -11,21 +11,21 @@ const getStoreDoctor = ()=>{
 }
 
 const addToStoreDB = (id)=>{
-    const storedDoctorData= getStoreDoctor();
+    const storedLawyerData= getStoreLawyer();
 
-    if(storedDoctorData.includes(id)){
+    if(storedLawyerData.includes(id)){
         console.log("hello");
         
         alert("this id already exist")
         
     }
     else{
-        storedDoctorData.push(id);
-        const data = JSON.stringify(storedDoctorData);
-        localStorage.setItem("doctorList", data)
+        storedLawyerData.push(id);
+        const data = JSON.stringify(storedLawyerData);
+        localStorage.setItem("lawyerList", data)
 
        
     }
 }
 
-export {addToStoreDB, getStoreDoctor}
+export {addToStoreDB, getStoreLawyer}

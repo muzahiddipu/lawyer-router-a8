@@ -1,7 +1,5 @@
 import React from 'react';
 
-// import doctors1 from '../../assets/doctors1.jpg';
-// import doctors2 from '../../assets/doctors2.jpg'
 
 import bannerBg from '../../assets/bannerimg.png';
 
@@ -20,15 +18,11 @@ const Banner = () => {
                         flags legally.</h1>
                     </div>
                     <div>
-                    <p className='text-lg px-20'>Our platform connects you with verified, experienced doctors across various specialties — all at your convenience. Whether it's a routine checkup or urgent consultation, book appointments in minutes and receive quality care you can trust.</p>
+                    <p className='text-lg px-20'>Our platform connects you with verified, experienced lawyers across various specialties — all at your convenience. Whether it's a routine checkup or urgent consultation, book appointments in minutes and receive quality care you can trust.</p>
                     
                     </div>
                 </div>
-                {/* <div className='grid lg:grid-cols-2 gap-5 md:grid-cols-2 grid-cols-1 p-10'>
-                    <img className='w-full rounded-xl' src={doctors1} alt=""/>
-                    <img className='w-full rounded-xl' src={doctors2} alt=""/>
-                </div> */}
-            </div>
+                </div>
         </div>
     );
 };

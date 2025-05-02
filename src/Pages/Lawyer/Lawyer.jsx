@@ -2,9 +2,9 @@ import React from 'react';
 import { Link } from 'react-router';
 
 
-const Doctor = ({doctor}) => {
+const Lawyer = ({lawyer}) => {
 
-    const {image_url, name, education, speciality, experience, license_number, view_details, id}=doctor;
+    const {image_url, name, speciality, experience, license_number, view_details, id}=lawyer;
 
     return (
         
@@ -25,12 +25,12 @@ const Doctor = ({doctor}) => {
                         <p className='text-gray-400'><small>{license_number}</small></p>
                     
                     <div className='flex justify-center mt-5'>
-                    <Link to={`/doctorDetails/${id}`}><button className='lg:px-30 px-10 lg:py-2 py-1 border-1 border-cyan-500 cursor-pointer text-cyan-700 rounded-4xl hover:text-white hover:bg-cyan-700'>View Details</button></Link>
+                    <Link to={`/lawyerDetails/${id}`}><button className='lg:px-30 px-10 lg:py-2 py-1 border-1 border-green-700 cursor-pointer text-green-700 rounded-4xl hover:text-white hover:bg-green-700'>View Details</button></Link>
                     </div>
                 </div>
-            </div>
+            </div> 
         
     );
 };
 
-export default Doctor;
+export default Lawyer;
